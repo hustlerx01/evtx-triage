@@ -1,0 +1,12 @@
+CA_4624_4625_LogonType2_LogonProc_chrome.evtx                  recs=   4 findings=  0 expected=None       got=[] HIT
+DE_1102_security_log_cleared.evtx                              recs= 112 findings=  1 expected=T1070.001  got=['T1070.001'] HIT
+DE_Fake_ComputerAccount_4720.evtx                              recs=   2 findings=  2 expected=T1136.002  got=['T1136.002'] HIT
+DE_renamed_psexec_service_sysmon_17_18.evtx                    recs=  11 findings=  6 expected=T1569.002  got=['T1569.002'] HIT
+LM_WMI_4624_4688_TargetHost.evtx                               recs=   8 findings=  1 expected=T1047      got=['T1047'] HIT
+LM_renamed_psexecsvc_5145.evtx                                 recs=  22 findings=  3 expected=T1569.002  got=['T1569.002'] HIT
+Powershell_4104_MiniDumpWriteDump_Lsass.evtx                   recs=   4 findings=  1 expected=T1059.001  got=['T1059.001'] HIT
+exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx   recs=   8 findings=  3 expected=T1218      got=['T1053.005', 'T1218'] HIT
+kerberos_pwd_spray_4771.evtx                                   recs=  12 findings=  2 expected=T1110.003  got=['T1070.001', 'T1110.003'] HIT
+persist_firefox_comhijack_sysmon_11_13_7_1.evtx                recs=  19 findings=  1 expected=T1546.015  got=['T1546.015'] HIT
+sysmon_10_lsass_mimikatz_sekurlsa_logonpasswords.evtx          recs=   1 findings=  1 expected=T1003.001  got=['T1003.001'] HIT
+sample-level hit rate: 11/11

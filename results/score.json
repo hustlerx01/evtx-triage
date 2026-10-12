@@ -1,0 +1,112 @@
+[
+  {
+    "file": "CA_4624_4625_LogonType2_LogonProc_chrome.evtx",
+    "expected": null,
+    "got": [],
+    "hit": true,
+    "records": 4,
+    "findings": 0
+  },
+  {
+    "file": "DE_1102_security_log_cleared.evtx",
+    "expected": "T1070.001",
+    "got": [
+      "T1070.001"
+    ],
+    "hit": true,
+    "records": 112,
+    "findings": 1
+  },
+  {
+    "file": "DE_Fake_ComputerAccount_4720.evtx",
+    "expected": "T1136.002",
+    "got": [
+      "T1136.002"
+    ],
+    "hit": true,
+    "records": 2,
+    "findings": 2
+  },
+  {
+    "file": "DE_renamed_psexec_service_sysmon_17_18.evtx",
+    "expected": "T1569.002",
+    "got": [
+      "T1569.002"
+    ],
+    "hit": true,
+    "records": 11,
+    "findings": 6
+  },
+  {
+    "file": "LM_WMI_4624_4688_TargetHost.evtx",
+    "expected": "T1047",
+    "got": [
+      "T1047"
+    ],
+    "hit": true,
+    "records": 8,
+    "findings": 1
+  },
+  {
+    "file": "LM_renamed_psexecsvc_5145.evtx",
+    "expected": "T1569.002",
+    "got": [
+      "T1569.002"
+    ],
+    "hit": true,
+    "records": 22,
+    "findings": 3
+  },
+  {
+    "file": "Powershell_4104_MiniDumpWriteDump_Lsass.evtx",
+    "expected": "T1059.001",
+    "got": [
+      "T1059.001"
+    ],
+    "hit": true,
+    "records": 4,
+    "findings": 1
+  },
+  {
+    "file": "exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx",
+    "expected": "T1218",
+    "got": [
+      "T1053.005",
+      "T1218"
+    ],
+    "hit": true,
+    "records": 8,
+    "findings": 3
+  },
+  {
+    "file": "kerberos_pwd_spray_4771.evtx",
+    "expected": "T1110.003",
+    "got": [
+      "T1070.001",
+      "T1110.003"
+    ],
+    "hit": true,
+    "records": 12,
+    "findings": 2
+  },
+  {
+    "file": "persist_firefox_comhijack_sysmon_11_13_7_1.evtx",
+    "expected": "T1546.015",
+    "got": [
+      "T1546.015"
+    ],
+    "hit": true,
+    "records": 19,
+    "findings": 1
+  },
+  {
+    "file": "sysmon_10_lsass_mimikatz_sekurlsa_logonpasswords.evtx",
+    "expected": "T1003.001",
+    "got": [
+      "T1003.001"
+    ],
+    "hit": true,
+    "records": 1,
+    "findings": 1
+  }
+]

