@@ -1,0 +1,2 @@
+pytest>=8
+python-evtx>=0.8
